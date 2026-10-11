@@ -1,0 +1,21 @@
+*** Using Compiler 'V6.22', folder: 'C:\keil5\ARM\ARMCLANG\Bin'
+Build target 'led'
+../Core/Src/main.c(132): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  132 |     Gui_Draw_Asc24_Hzk24(NAME_DISP_X, NAME_DISP_Y, WHITE_4_4, BLACK, (uint8_t*)MY_NAME_ID);
+      |                                                                                ^~~~~~~~~~
+../Core/Src/main.c(52): note: expanded from macro 'MY_NAME_ID'
+   52 | #define  MY_NAME_ID     MY_NAME MY_ID
+      |                         ^~~~~~~
+../Core/Src/main.c(50): note: expanded from macro 'MY_NAME'
+   50 | #define  MY_NAME        " <D6><DC><D4><F3><C0><D6>"
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c(146): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+  146 |     printf("<C2><U+07BA><C6><CE><C4>24121977\r\n");
+      |             ^~~~        ~~~~~~~~~~~~
+2 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=35304 RO-data=744 RW-data=48 ZI-data=18176  
+FromELF: creating hex file...
+"led\led.axf" - 0 Error(s), 2 Warning(s).
+Build Time Elapsed:  00:00:01
